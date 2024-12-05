@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import pdf from "../../Assets/../Assets/Vasantha-Krishnan-S-714022205116 (2).pdf";
+import pdf from "../../Assets/../Assets/Vasantha-Krishnan-S.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -17,10 +17,9 @@ function ResumeNew() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Adjust scale dynamically based on screen width
   const calculateScale = () => {
-    if (width > 786) return 1.7; // For larger screens
-    return width / 500; // Dynamically scale for mobile (500 is approx PDF default width)
+    if (width > 786) return 1.7;
+    return width / 500; 
   };
 
   return (

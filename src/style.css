@@ -604,50 +604,48 @@ button:focus {
 
 .resume-section {
   position: relative !important;
-  padding-top: 110px !important;
+  padding-top: 150px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
   color: white !important;
+  overflow-x: hidden; 
 }
 
 .resume {
   padding-top: 50px;
   padding-bottom: 50px;
   justify-content: center;
-}
-
-.resume-left {
-  padding-right: 80px !important;
-}
-
-.resume-right {
-  padding-left: 80px !important;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  overflow-x: hidden; 
 }
 
 @media (max-width: 767px) {
   .resume-section {
-    padding-top: 70px !important;
-    padding-bottom: 20px !important;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    overflow-x: hidden; 
   }
 
   .resume {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .react-pdf__Page {
-    display: block; 
+    padding: 10px;
+    overflow-x: hidden; 
   }
 
   .react-pdf__Page canvas {
-    max-width: 100%; 
-    height: auto;    
-    margin: 0 auto;  
+    width: 100% !important; 
+    height: auto !important; 
+    display: block; 
+  }
+
+  .react-pdf__Page {
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden; 
   }
 }
+
 
 .resume .resume-title {
   font-size: 2em;
