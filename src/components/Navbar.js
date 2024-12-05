@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
@@ -26,6 +26,40 @@ function NavBar() {
   }
 
   window.addEventListener("scroll", scrollHandler);
+
+  const [starCount, setStarCount] = useState(0); 
+  const [hasStarred, setHasStarred] = useState(false);
+
+  useEffect(() => {
+    const storedStarCount = localStorage.getItem("starCount");
+    const userHasStarred = localStorage.getItem("hasStarred");
+
+    if (storedStarCount) {
+      setStarCount(Number(storedStarCount));
+    }
+    if (userHasStarred) {
+      setHasStarred(userHasStarred === "true");
+    }
+  }, []);
+
+  const handleStarClick = () => {
+    if (!hasStarred) {
+      const newStarCount = starCount + 1;
+      setStarCount(newStarCount);
+      setHasStarred(true);
+
+      localStorage.setItem("starCount", newStarCount);
+      localStorage.setItem("hasStarred", "true");
+    } else {
+    }
+  };
+
+  const formatStarCount = (count) => {
+    if (count >= 1000) {
+      return `${(count / 1000).toFixed(1)}k`;
+    }
+    return count;
+  };
 
   return (
     <Navbar
@@ -90,10 +124,9 @@ function NavBar() {
             </Nav.Item>
 
             <Nav.Item className="fork-btn">
-              <Button
-                className="fork-btn-inner"
-              >
+              <Button className="fork-btn-inner" onClick={handleStarClick}>
                 <AiFillStar style={{ fontSize: "1.1em" }} />
+                <span style={{ marginLeft: "5px" }}>{formatStarCount(starCount)}</span>
               </Button>
             </Nav.Item>
           </Nav>

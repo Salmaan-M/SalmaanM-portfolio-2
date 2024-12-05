@@ -8,7 +8,9 @@ import book from "../../Assets/Projects/book.png"
 import snake from "../../Assets/Projects/snake.png"
 import evnironment from "../../Assets/Projects/environment.png"
 import space from "../../Assets/Projects/space.png"
-import emotion from "../../Assets/Projects/emotion.png";
+import bank from "../../Assets/Projects/bank.png"
+import car from "../../Assets/Projects/car.png"
+import virtualclassroom from "../../Assets/Projects/virtualclassroom.jpg"
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -27,13 +29,13 @@ function Projects() {
               isBlog={false}
               title="Your Gateway to Books"
               description="A dynamic book-selling website using JavaScript with real-time search, responsive design, secure cart, and admin inventory management."
-              ghLink="https://github.com/soumyajit4419/Chatify"
+              ghLink="https://github.com/vasanthkrishnan/book-website"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={space}
+              imgPath={virtualclassroom}
               isBlog={false}
               title="EduSphere"
               description="A Virtual Classroom built with JavaScript featuring student attendance tracking, interactive sessions, and integrated library access for seamless learning."
@@ -91,7 +93,7 @@ function Projects() {
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={bank}
               isBlog={false}
               title="BankEase Control System"
               description="A Java console banking system enabling users to check balance, transfer funds, view transaction history, request cheque books, and empowering admins to manage customers, oversee transactions, and monitor bank balances."
@@ -100,7 +102,7 @@ function Projects() {
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={car}
               isBlog={false}
               title="AutoHire"
               description="AutoHire is a Java and MySQL-based car rental management system, offering features like customer registration, car bookings, inventory management, and rental history tracking, providing an efficient solution for rental businesses."
