@@ -1,8 +1,6 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
 import {
-  DiJavascript1,
   DiReact,
   DiNodejs,
   DiMongodb,
@@ -18,18 +16,12 @@ import {
   BiCode,
 } from "react-icons/bi";
 import {
-  SiRedis,
-  SiFirebase,
-  SiNextdotjs,
-  SiSolidity,
-  SiPostgresql,
   SiExpress,
   SiTailwindcss,
   SiGithub,
   SiMysql,
   SiXampp,
 } from "react-icons/si";
-import { TbBrandGolang, TbBrandPython } from "react-icons/tb";
 
 function Techstack() {
   return (

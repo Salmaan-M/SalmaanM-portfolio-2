@@ -2,13 +2,13 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
+import wifi from "../../Assets/Projects/wifi.png"
+import vrptw from "../../Assets/Projects/vrptw.png"
+import book from "../../Assets/Projects/book.png"
+import snake from "../../Assets/Projects/snake.png"
+import evnironment from "../../Assets/Projects/environment.png"
+import space from "../../Assets/Projects/space.png"
 import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
-
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -23,7 +23,7 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={book}
               isBlog={false}
               title="Your Gateway to Books"
               description="A dynamic book-selling website using JavaScript with real-time search, responsive design, secure cart, and admin inventory management."
@@ -33,7 +33,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={space}
               isBlog={false}
               title="EduSphere"
               description="A Virtual Classroom built with JavaScript featuring student attendance tracking, interactive sessions, and integrated library access for seamless learning."
@@ -43,7 +43,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={vrptw}
               isBlog={false}
               title="OptiRoute"
               description="A JavaScript project solving the Vehicle Routing Problem with Time Windows using Clarke-Wright Savings and Genetic Algorithms, featuring interactive maps and optimized route visualization."
@@ -53,7 +53,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={wifi}
               isBlog={false}
               title="HostelConnect"
               description="A MERN-based hostel system where the admin registers students' devices with MAC addresses. Students mark attendance only on registered devices connected to WiFi, active for 1.5 hours."
@@ -63,7 +63,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={space}
               isBlog={false}
               title="GalaxyDefender"
               description="A Java-based Space Invaders game where players control a spaceship, shoot enemy aliens, and dodge attacks. Features smooth gameplay, bullet count, and game-over conditions when bullets run out."
@@ -73,7 +73,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={snake}
               isBlog={false}
               title="SnakeX"
               description="A classic Snake game developed in Java, featuring smooth controls, dynamic gameplay, and score tracking. Players navigate the snake to eat food while avoiding collisions."
@@ -82,7 +82,7 @@ function Projects() {
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={evnironment}
               isBlog={false}
               title="EcoSphere"
               description="An Environment Awareness website built with MERN stack, promoting sustainability through interactive features, informative content, and user engagement to inspire eco-friendly actions and track environmental impact effectively."

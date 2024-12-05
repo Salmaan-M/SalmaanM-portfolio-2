@@ -4,11 +4,11 @@ import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
   AiFillInstagram,
   AiOutlineMail,
+  AiOutlineWhatsApp,
 } from "react-icons/ai";
-import { FaLinkedinIn, FaMailchimp, FaVoicemail } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
   return (
@@ -65,6 +65,9 @@ function Home2() {
             <p>
               Feel free to <span className="purple">connect </span>with me
             </p>
+            <p>
+            I’d love to hear about your project, ideas, or anything you'd like to share. Whether you have questions or want to collaborate, feel free to reach me, and I’ll get back to you as soon as possible.
+            </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
@@ -98,7 +101,17 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/"
+                  href="https://wa.me/6379932251"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <AiOutlineWhatsApp />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://www.instagram.com/_._vsnth.krish_._"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
