@@ -11,30 +11,28 @@ function AboutCard() {
             Hi Everyone, I am <span className="purple">Vasantha Krishnan S </span>
             from <span className="purple"> Madurai, India.</span>
             <br />
-            I am currently employed as a software developer at Juspay.
             <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
+            I am currently pursuing my Bachelor's degree at Sri Shakthi Institute of Engineering and Technology, Coimbatore.
+            <br />
+            <br />
+            I am a dedicated developer specializing in Java, JavaScript, and MongoDB, with experience in web development, algorithmic problem-solving, and interactive visualizations. I enjoy crafting efficient solutions, learning new technologies, and blending creativity with technical expertise to deliver impactful results.
             <br />
             <br />
             Apart from coding, some other activities that I love to do!
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <ImPointRight /> Reading Books
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
+              <ImPointRight /> Watching Cricket
             </li>
             <li className="about-activity">
               <ImPointRight /> Travelling
             </li>
           </ul>
-
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
-          </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+          <br />
+          <footer className="blockquote-footer">Vasantha Krishnan S</footer>
         </blockquote>
       </Card.Body>
     </Card>

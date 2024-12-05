@@ -25,10 +25,9 @@ function Projects() {
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+              title="Your Gateway to Books"
+              description="A dynamic book-selling website using JavaScript with real-time search, responsive design, secure cart, and admin inventory management."
               ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
             />
           </Col>
 
@@ -36,10 +35,9 @@ function Projects() {
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="EduSphere"
+              description="A Virtual Classroom built with JavaScript featuring student attendance tracking, interactive sessions, and integrated library access for seamless learning."
+              ghLink="https://github.com/vasanthkrishnan/virtual-class-room"
             />
           </Col>
 
@@ -47,10 +45,9 @@ function Projects() {
             <ProjectCard
               imgPath={editor}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="OptiRoute"
+              description="A JavaScript project solving the Vehicle Routing Problem with Time Windows using Clarke-Wright Savings and Genetic Algorithms, featuring interactive maps and optimized route visualization."
+              ghLink="https://github.com/vasanthkrishnan/Vehicle-Routing-problem-with-time-windows"            
             />
           </Col>
 
@@ -58,10 +55,9 @@ function Projects() {
             <ProjectCard
               imgPath={leaf}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="HostelConnect"
+              description="A MERN-based hostel system where the admin registers students' devices with MAC addresses. Students mark attendance only on registered devices connected to WiFi, active for 1.5 hours."
+              ghLink="https://github.com/vasanthkrishnan/ee-project-5"
             />
           </Col>
 
@@ -69,10 +65,9 @@ function Projects() {
             <ProjectCard
               imgPath={suicide}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="GalaxyDefender"
+              description="A Java-based Space Invaders game where players control a spaceship, shoot enemy aliens, and dodge attacks. Features smooth gameplay, bullet count, and game-over conditions when bullets run out."
+              ghLink="https://github.com/vasanthkrishnan/space-invaders-game-java"
             />
           </Col>
 
@@ -80,11 +75,36 @@ function Projects() {
             <ProjectCard
               imgPath={emotion}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="SnakeX"
+              description="A classic Snake game developed in Java, featuring smooth controls, dynamic gameplay, and score tracking. Players navigate the snake to eat food while avoiding collisions."
+              ghLink="https://github.com/vasanthkrishnan/snake-game-java"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={emotion}
+              isBlog={false}
+              title="EcoSphere"
+              description="An Environment Awareness website built with MERN stack, promoting sustainability through interactive features, informative content, and user engagement to inspire eco-friendly actions and track environmental impact effectively."
+              ghLink="https://github.com/vasanthkrishnan/envirnment-project"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={emotion}
+              isBlog={false}
+              title="BankEase Control System"
+              description="A Java console banking system enabling users to check balance, transfer funds, view transaction history, request cheque books, and empowering admins to manage customers, oversee transactions, and monitor bank balances."
+              ghLink="https://github.com/vasanthkrishnan/bank-application"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={emotion}
+              isBlog={false}
+              title="AutoHire"
+              description="AutoHire is a Java and MySQL-based car rental management system, offering features like customer registration, car bookings, inventory management, and rental history tracking, providing an efficient solution for rental businesses."
+              ghLink="https://github.com/vasanthkrishnan/car-rental-system"
             />
           </Col>
         </Row>
