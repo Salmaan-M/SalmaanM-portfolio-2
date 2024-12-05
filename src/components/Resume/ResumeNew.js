@@ -9,11 +9,19 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function ResumeNew() {
-  const [width, setWidth] = useState(1200);
+  const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-    setWidth(window.innerWidth);
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  // Adjust scale dynamically based on screen width
+  const calculateScale = () => {
+    if (width > 786) return 1.7; // For larger screens
+    return width / 500; // Dynamically scale for mobile (500 is approx PDF default width)
+  };
 
   return (
     <div>
@@ -33,7 +41,7 @@ function ResumeNew() {
 
         <Row className="resume">
           <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+            <Page pageNumber={1} scale={calculateScale()} />
           </Document>
         </Row>
 

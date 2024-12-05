@@ -625,16 +625,30 @@ button:focus {
 }
 
 @media (max-width: 767px) {
-  .resume-left {
-    padding-right: 15px !important;
-    padding-left: 15px !important;
+  .resume-section {
+    padding-top: 70px !important;
+    padding-bottom: 20px !important;
   }
 
-  .resume-right {
-    padding-right: 15px !important;
-    padding-left: 15px !important;
+  .resume {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .react-pdf__Page {
+    display: block; 
+  }
+
+  .react-pdf__Page canvas {
+    max-width: 100%; 
+    height: auto;    
+    margin: 0 auto;  
   }
 }
+
 .resume .resume-title {
   font-size: 2em;
   font-weight: 700;
