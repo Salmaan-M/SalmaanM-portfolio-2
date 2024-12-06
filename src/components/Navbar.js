@@ -10,13 +10,14 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
+  // Handle scrolling to change navbar color
   function scrollHandler() {
     if (window.scrollY >= 20) {
       updateNavbar(true);
@@ -25,9 +26,24 @@ function NavBar() {
     }
   }
 
-  window.addEventListener("scroll", scrollHandler);
+  // Handle window resizing
+  function handleResize() {
+    setIsMobile(window.innerWidth <= 767);
+  }
 
-  const [starCount, setStarCount] = useState(0); 
+  // Add/remove event listeners on mount/unmount
+  useEffect(() => {
+    window.addEventListener("scroll", scrollHandler);
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Check initial window size
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  // Handle star functionality
+  const [starCount, setStarCount] = useState(0);
   const [hasStarred, setHasStarred] = useState(false);
 
   useEffect(() => {
@@ -50,7 +66,6 @@ function NavBar() {
 
       localStorage.setItem("starCount", newStarCount);
       localStorage.setItem("hasStarred", "true");
-    } else {
     }
   };
 
@@ -69,68 +84,64 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="d-flex">
-          <h1>Vasantha Krishnan S</h1>
-        </Navbar.Brand>
-        <Navbar.Toggle
-          aria-controls="responsive-navbar-nav"
-          onClick={() => {
-            updateExpanded(expand ? false : "expanded");
-          }}
+        {/* Show brand only on desktop */}
+        {!isMobile && (
+          <Navbar.Brand href="/" className="d-flex">
+            <h1>Vasantha Krishnan S</h1>
+          </Navbar.Brand>
+        )}
+
+        {/* Links displayed horizontally */}
+        <Nav
+          className={`ms-auto nav-links ${isMobile ? "nav-links-mobile" : ""}`}
+          defaultActiveKey="#home"
         >
-          <span></span>
-          <span></span>
-          <span></span>
-        </Navbar.Toggle>
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto" defaultActiveKey="#home">
-            <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
-              </Nav.Link>
-            </Nav.Item>
+          <Nav.Item>
+            <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+              <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+            </Nav.Link>
+          </Nav.Item>
 
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/about"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
-              </Nav.Link>
-            </Nav.Item>
+          <Nav.Item>
+            <Nav.Link
+              as={Link}
+              to="/about"
+              onClick={() => updateExpanded(false)}
+            >
+              <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+            </Nav.Link>
+          </Nav.Item>
 
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/project"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Projects
-              </Nav.Link>
-            </Nav.Item>
+          <Nav.Item>
+            <Nav.Link
+              as={Link}
+              to="/project"
+              onClick={() => updateExpanded(false)}
+            >
+              <AiOutlineFundProjectionScreen
+                style={{ marginBottom: "2px" }}
+              />{" "}
+              Projects
+            </Nav.Link>
+          </Nav.Item>
 
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/resume"
-                onClick={() => updateExpanded(false)}
-              >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
-              </Nav.Link>
-            </Nav.Item>
+          <Nav.Item>
+            <Nav.Link
+              as={Link}
+              to="/resume"
+              onClick={() => updateExpanded(false)}
+            >
+              <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+            </Nav.Link>
+          </Nav.Item>
 
-            <Nav.Item className="fork-btn">
-              <Button className="fork-btn-inner" onClick={handleStarClick}>
-                <AiFillStar style={{ fontSize: "1.1em" }} />
-                <span style={{ marginLeft: "5px" }}>{formatStarCount(starCount)}</span>
-              </Button>
-            </Nav.Item>
-          </Nav>
-        </Navbar.Collapse>
+          <Nav.Item className="fork-btn">
+            <Button className="fork-btn-inner" onClick={handleStarClick}>
+              <AiFillStar style={{ fontSize: "1.1em" }} />
+              <span style={{ marginLeft: "5px" }}>{formatStarCount(starCount)}</span>
+            </Button>
+          </Nav.Item>
+        </Nav>
       </Container>
     </Navbar>
   );
