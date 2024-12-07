@@ -84,21 +84,20 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        {/* Show brand only on desktop */}
         {!isMobile && (
           <Navbar.Brand href="/" className="d-flex">
             <h1>Vasantha Krishnan S</h1>
           </Navbar.Brand>
         )}
 
-        {/* Links displayed horizontally */}
         <Nav
-          className={`ms-auto nav-links ${isMobile ? "nav-links-mobile" : ""}`}
+          className={`ms-auto nav-links ${isMobile ? "d-flex justify-content-evenly w-100" : ""}`}
           defaultActiveKey="#home"
         >
           <Nav.Item>
             <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-              <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+              <AiOutlineHome style={{ marginBottom: "2px" }} />
+              {!isMobile && " Home"}
             </Nav.Link>
           </Nav.Item>
 
@@ -108,7 +107,8 @@ function NavBar() {
               to="/about"
               onClick={() => updateExpanded(false)}
             >
-              <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+              <AiOutlineUser style={{ marginBottom: "2px" }} />
+              {!isMobile && " About"}
             </Nav.Link>
           </Nav.Item>
 
@@ -118,10 +118,8 @@ function NavBar() {
               to="/project"
               onClick={() => updateExpanded(false)}
             >
-              <AiOutlineFundProjectionScreen
-                style={{ marginBottom: "2px" }}
-              />{" "}
-              Projects
+              <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} />
+              {!isMobile && " Projects"}
             </Nav.Link>
           </Nav.Item>
 
@@ -131,14 +129,19 @@ function NavBar() {
               to="/resume"
               onClick={() => updateExpanded(false)}
             >
-              <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+              <CgFileDocument style={{ marginBottom: "2px" }} />
+              {!isMobile && " Resume"}
             </Nav.Link>
           </Nav.Item>
 
           <Nav.Item className="fork-btn">
             <Button className="fork-btn-inner" onClick={handleStarClick}>
-              <AiFillStar style={{ fontSize: "1.1em" }} />
-              <span style={{ marginLeft: "5px" }}>{formatStarCount(starCount)}</span>
+              <div className="star-container">
+                <AiFillStar style={{ fontSize: "1.5em", color: "#c95bf5" }} />
+                <span className="star-count">
+                  {formatStarCount(starCount)}
+                </span>
+              </div>
             </Button>
           </Nav.Item>
         </Nav>

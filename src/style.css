@@ -87,6 +87,7 @@ button:focus {
   transition: all 0.3s ease-out 0s !important;
   padding: 0.3rem 2rem !important;
   font-size: 1.2rem !important;
+  background-color: rgb(10, 4, 22);
 }
 
 .navbar-toggler {
@@ -124,7 +125,7 @@ button:focus {
 .navbar-nav {
   display: flex !important; 
   flex-direction: row !important; 
-  justify-content: center !important;
+  justify-content: space-evenly !important;
   align-items: center !important;
 }
 
@@ -133,9 +134,12 @@ button:focus {
 }
 
 .navbar-nav .nav-link {
+  display: flex;
+  padding: 1rem;
   color: white !important;
-  font-size: 1rem !important; 
-  padding: 0.5rem 1rem !important;
+  font-size: 1.5rem !important; 
+  justify-content: space-around !important;
+  align-items: center !important;
   text-align: center;
   transition: all 0.3s ease-out;
 }
@@ -144,7 +148,7 @@ button:focus {
   color: #c95bf5 !important; 
 }
 
-.navbar-nav .nav-link::after {
+/* .navbar-nav .nav-link::after {
   content: "";
   display: block;
   height: 3px;
@@ -152,47 +156,86 @@ button:focus {
   background: #c95bf5;
   margin: auto;
   transition: width 0.3s ease-out;
-}
+} */
 
-.navbar-nav .nav-link:hover::after {
+/* .navbar-nav .nav-link:hover::after {
   width: 100%;
+} */
+
+
+/* Navbar styles */
+/* .navbar {
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+  padding: 10px 20px;
+} */
+
+.sticky {
+  background-color: #222; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Navigation Links */
+/* .nav-links {
+  display: flex;
+  font-size: 20px;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+} */
 
-@media (max-width: 767px) {
-  .navbar {
-    padding: 1rem !important;
-    font-size: 1rem !important;
-    background-color: #181a27 !important;
-  }
+/* .nav-links .nav-icon {
+  font-size: 30px;
+  color: #fff;
+  padding: 10px;
+  text-align: left;
+  transition: transform 0.2s, color 0.2s;
+} */
 
-  .navbar-toggler {
-    display: block !important; 
-  }
+/* .nav-links .nav-icon:hover {
+  color: #f0a500; 
+  transform: scale(1.2);
+} */
 
-  .navbar-brand {
-    display: none !important; 
-  }
+.star-container {
+  display: inline-flex;
+  align-items: center;
+}
 
-  .nav-link {
-    font-size: 4vw !important; 
-    padding: 0.5rem 0.8rem !important; 
-  }
+.star-count {
+  margin-left: 8px; 
+  font-size: 1em; 
+  font-weight: bold;
+  color: #fff; 
+}
 
-  .navbar-nav {
-    flex-wrap: wrap !important;
-    justify-content: space-around !important;
-  }
+.fork-btn-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6c63ff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.fork-btn-inner:hover {
+  background-color: #574b90;
+  cursor: pointer;
 }
 
 /* --------- */
 /* Home section */
 /* --------- */
 .wave {
-  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.1s; /* Change to speed up or slow down */
-  animation-iteration-count: infinite; /* Never stop waving :) */
-  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  animation-name: wave-animation; 
+  animation-duration: 2.1s; 
+  animation-iteration-count: infinite; 
+  transform-origin: 70% 70%; 
   display: inline-block;
 }
 
@@ -202,7 +245,7 @@ button:focus {
   }
   10% {
     transform: rotate(14deg);
-  } /* The following five values can be played with to make the waving more or less extreme */
+  } 
   20% {
     transform: rotate(-8deg);
   }
@@ -217,7 +260,7 @@ button:focus {
   }
   60% {
     transform: rotate(0deg);
-  } /* Reset for the last half to pause */
+  } 
   100% {
     transform: rotate(0deg);
   }
