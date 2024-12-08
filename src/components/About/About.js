@@ -6,10 +6,19 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import myImg from "../../Assets/avatar.svg";
+import Tilt from "react-parallax-tilt";
 
 function About() {
   return (
     <Container fluid className="about-section">
+      <Row className="d-flex justify-content-center align-items-center">
+        <Col md={4} className="myAvtar d-flex justify-content-center">
+          <Tilt>
+            <img src={myImg} className="img-fluid" alt="avatar" />
+          </Tilt>
+        </Col>
+      </Row>
       <Particle />
       <Container>
         <Row style={{ justifyContent: "center", padding: "10px" }}>
