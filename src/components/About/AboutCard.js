@@ -15,7 +15,7 @@ function AboutCard() {
             I am currently pursuing my Bachelor's degree at Sri Shakthi Institute of Engineering and Technology, Coimbatore.
             <br />
             <br />
-            I am a dedicated developer specializing in Java, JavaScript, and MongoDB, with experience in web development, algorithmic problem-solving, and interactive visualizations. I enjoy crafting efficient solutions, learning new technologies, and blending creativity with technical expertise to deliver impactful results.
+            I am a dedicated developer specializing in Java, Python, MERN, JavaScript, and MongoDB, with experience in web development, algorithmic problem-solving, and interactive visualizations. I enjoy crafting efficient solutions, learning new technologies, and blending creativity with technical expertise to deliver impactful results.
             <br />
             <br />
             Apart from coding, some other activities that I love to do!
