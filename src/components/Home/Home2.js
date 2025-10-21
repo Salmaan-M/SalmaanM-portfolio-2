@@ -20,12 +20,12 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              Passionate about programming and continuously learning to improve
+              my craft.
               <br />
               <br />I am fluent in classics like
               <i>
-                <b className="purple">C, Java, MERN, Python</b>
+                <b className="purple"> C, Java, MERN,</b>
               </i>
               <br />
               <br />
@@ -33,9 +33,7 @@ function Home2() {
               <i>
                 <b className="purple">Web Technologies and Products </b> and
                 also in areas related to{" "}
-                <b className="purple">
-                  Problem Solving using Java
-                </b>
+                <b className="purple">Problem Solving using Java</b>
               </i>
               <br />
               <br />
@@ -66,12 +64,14 @@ function Home2() {
               Feel free to <span className="purple">connect </span>with me
             </p>
             <p>
-            I’d love to hear about your project, ideas, or anything you'd like to share. Whether you have questions or want to collaborate, feel free to reach me, and I’ll get back to you as soon as possible.
+              I’d love to hear about your project, ideas, or anything you'd like
+              to share. Whether you have questions or want to collaborate, feel
+              free to reach me, and I’ll get back to you as soon as possible.
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/vasanthkrishnan/"
+                  href="https://github.com/Salmaan-M"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -81,7 +81,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/vasanthkrish2004/"
+                  href="https://www.linkedin.com/in/salmaan-m/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -91,17 +91,17 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="mailto:vasanthkrish.s2004@gmail.com"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=salmaansalmaan114@gmail.com"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
                   <AiOutlineMail />
-                </a>
+               </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://wa.me/6379932251"
+                  href="https://wa.me/7395816915"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
@@ -111,7 +111,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/_._vsnth.krish_._"
+                  href="https://www.instagram.com/itz.salmaan_"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"

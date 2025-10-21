@@ -48,7 +48,7 @@ function NavBar() {
       <Container>
         {!isMobile && (
           <Navbar.Brand href="/" className="d-flex">
-            <h1>Vasantha Krishnan S</h1>
+            <h1>Salmaan M</h1>
           </Navbar.Brand>
         )}
 

@@ -9,7 +9,7 @@ function Type() {
           "MERN Stack Developer",
           "Java - Programmer",
           "Full Stack Developer",
-          "Python - Programmer",
+          
         ],
         autoStart: true,
         loop: true,
