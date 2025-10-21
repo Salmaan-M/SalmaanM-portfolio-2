@@ -1,14 +1,14 @@
-import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import wifi from "../../Assets/Projects/wifi.png"
-import vrptw from "../../Assets/Projects/vrptw.png"
+import ain8n from "../../Assets/Projects/ai-gmail-n8n.png"
+import aira from "../../Assets/Projects/ai-ra.png"
+import tb from "../../Assets/Projects/tb.png"
 import book from "../../Assets/Projects/book.png"
-import snake from "../../Assets/Projects/snake.png"
-import evnironment from "../../Assets/Projects/environment.png"
-import space from "../../Assets/Projects/space.png"
-import bank from "../../Assets/Projects/bank.png"
+import ma from "../../Assets/Projects/ma.png"
+import hms from "../../Assets/Projects/hms.png"
+import cc from "../../Assets/Projects/cc.png"
+import es from "../../Assets/Projects/es.png"
 import car from "../../Assets/Projects/car.png"
 import virtualclassroom from "../../Assets/Projects/virtualclassroom.jpg"
 import {
@@ -29,7 +29,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={wifi}
+              imgPath={ain8n}
               isBlog={false}
               title="AI Automation Society – Automated AI Implementation Reports with n8n & Base44"
               description="This project automates generating personalized AI implementation guides. When a business submits a form on the AI Automation Society website, a webhook captures the details, which are processed by two chained AI agents. The system then creates a styled HTML report and emails it to the prospect, including an invite to book a personal strategy call."
@@ -38,7 +38,7 @@ function Projects() {
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={wifi}
+              imgPath={aira}
               isBlog={false}
               title="ATS Genius"
               description="ATS Genius is a free AI-powered resume analyzer that helps job seekers optimize resumes for Applicant Tracking Systems (ATS) and recruiters. Built on the Puter Platform, it integrates AI, authentication, file storage, key-value storage, and hosting in one seamless solution."
@@ -47,7 +47,7 @@ function Projects() {
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={space}
+              imgPath={cc}
               isBlog={false}
               title="Constitution Connect"
               description="Constitution Connect is a MERN stack project designed to increase awareness and understanding of the Indian Constitution. It provides interactive content, quizzes, blogs, and user engagement tools built using modern web technologies."
@@ -56,7 +56,7 @@ function Projects() {
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={vrptw}
+              imgPath={tb}
               isBlog={false}
               title="Thinkboard"
               description="A cloud-deployed MERN note-taking app with CRUD, REST API, and rate limiting."
@@ -65,7 +65,7 @@ function Projects() {
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={snake}
+              imgPath={ma}
               isBlog={false}
               title="Favorite-movie-app"
               description="A simple React application to display popular movies using a movie API."
@@ -74,7 +74,7 @@ function Projects() {
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={evnironment}
+              imgPath={hms}
               isBlog={false}
               title="Hospital-Management-System"
               description="Hospital Management System is a Java-based application integrated with SQL to manage core hospital operations including patient records, doctor details, appointment scheduling, and data management. It demonstrates CRUD operations via JDBC for database connectivity, enabling efficient handling of hospital workflows."
@@ -83,7 +83,7 @@ function Projects() {
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bank}
+              imgPath={es}
               isBlog={false}
               title="Endangered species detection"
               description="A MLOPS project where endangered species detection is performed to identify animals"
