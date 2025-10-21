@@ -59,7 +59,7 @@ function NavBar() {
           <Nav.Item>
             <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
               <AiOutlineHome style={{ marginBottom: "2px" }} />
-              {!isMobile && " Home"}
+              {!isMobile && "  Home"}
             </Nav.Link>
           </Nav.Item>
 
@@ -70,7 +70,7 @@ function NavBar() {
               onClick={() => updateExpanded(false)}
             >
               <AiOutlineUser style={{ marginBottom: "2px" }} />
-              {!isMobile && " About"}
+              {!isMobile && "  About"}
             </Nav.Link>
           </Nav.Item>
 
@@ -81,7 +81,7 @@ function NavBar() {
               onClick={() => updateExpanded(false)}
             >
               <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} />
-              {!isMobile && " Projects"}
+              {!isMobile && "  Projects"}
             </Nav.Link>
           </Nav.Item>
 
@@ -92,7 +92,7 @@ function NavBar() {
               onClick={() => updateExpanded(false)}
             >
               <CgFileDocument style={{ marginBottom: "2px" }} />
-              {!isMobile && " Resume"}
+              {!isMobile && "  Resume"}
             </Nav.Link>
           </Nav.Item>
         </Nav>

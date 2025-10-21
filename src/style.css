@@ -137,7 +137,7 @@ button:focus {
   display: flex;
   padding: 1rem;
   color: white !important;
-  font-size: 1.5rem !important; 
+  font-size: 1.3rem !important; 
   justify-content: space-around !important;
   align-items: center !important;
   text-align: center;

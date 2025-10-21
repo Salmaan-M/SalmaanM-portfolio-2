@@ -20,36 +20,30 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              Passionate about programming and continuously learning to improve
-              my craft.
-              <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> C, Java, MERN,</b>
-              </i>
-              <br />
-              <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">Problem Solving using Java</b>
-              </i>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Express.js</b>
-              </i>
-            </p>
+  Hello! I am a passionate programmer dedicated to continually upgrading my skills and crafting impactful software solutions.
+  <br />
+  <br />
+  I am well-versed in foundational languages and technologies like 
+  <i>
+    <b className="purple"> C, Java, and the MERN stack</b>
+  </i>
+  , and I actively explore innovative approaches to problem-solving using Java.
+  <br />
+  <br />
+  My primary interests lie in building cutting-edge&nbsp;
+  <i>
+    <b className="purple">web technologies and scalable products</b>
+  </i>
+  , with a strong enthusiasm for <b className="purple">Artificial Intelligence (AI)</b> and <b className="purple">cloud computing</b>.
+  <br />
+  <br />
+  Whenever I get the opportunity, I enjoy applying my skills in developing full-stack applications with <b className="purple">Node.js</b> and modern JavaScript libraries/frameworks, including&nbsp;
+  <i>
+    <b className="purple">React.js and Express.js</b>
+  </i>
+  .
+</p>
+
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
