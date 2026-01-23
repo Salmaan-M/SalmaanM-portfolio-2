@@ -10,6 +10,7 @@ import hms from "../../Assets/Projects/hms.png"
 import cc from "../../Assets/Projects/cc.png"
 import es from "../../Assets/Projects/es.png"
 import car from "../../Assets/Projects/car.png"
+import gf from "../../Assets/Projects/gigf.png"
 import virtualclassroom from "../../Assets/Projects/virtualclassroom.jpg"
 import {
   AiFillGithub
@@ -29,15 +30,6 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={ain8n}
-              isBlog={false}
-              title="AI Automation Society – Automated AI Implementation Reports with n8n & Base44"
-              description="This project automates generating personalized AI implementation guides. When a business submits a form on the AI Automation Society website, a webhook captures the details, which are processed by two chained AI agents. The system then creates a styled HTML report and emails it to the prospect, including an invite to book a personal strategy call."
-              ghLink="https://github.com/Salmaan-M/AI-Automation-Society"
-            />
-          </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
               imgPath={aira}
               isBlog={false}
               title="ATS Genius"
@@ -52,6 +44,24 @@ function Projects() {
               title="Constitution Connect"
               description="Constitution Connect is a MERN stack project designed to increase awareness and understanding of the Indian Constitution. It provides interactive content, quizzes, blogs, and user engagement tools built using modern web technologies."
               ghLink="https://github.com/Salmaan-M/constitution-connect"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={gf}
+              isBlog={false}
+              title="GigFlow"
+              description="A freelance market where people and post gigs and hire people"
+              ghLink="https://github.com/Salmaan-M/GigFlow"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={ain8n}
+              isBlog={false}
+              title="AI Automation Society – Automated AI Implementation Reports with n8n & Base44"
+              description="This project automates generating personalized AI implementation guides. When a business submits a form on the AI Automation Society website, a webhook captures the details, which are processed by two chained AI agents. The system then creates a styled HTML report and emails it to the prospect, including an invite to book a personal strategy call."
+              ghLink="https://github.com/Salmaan-M/AI-Automation-Society"
             />
           </Col>
           <Col md={4} className="project-card">
