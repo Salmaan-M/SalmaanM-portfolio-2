@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Badge } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import {
@@ -11,6 +11,19 @@ import {
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
+  const skills = [
+    "MERN Stack", "Node.js", "React.js", "Express.js", "MongoDB",
+    "Java", "C", "AI", "Cloud Computing", "Full-Stack"
+  ];
+
+  const tiltOptions = {
+    max: 25,
+    scale: 1.05,
+    speed: 1000,
+    glare: true,
+    "max-glare": 0.5,
+  };
+
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
@@ -20,34 +33,31 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-  Hello! I am a passionate programmer dedicated to continually upgrading my skills and crafting impactful software solutions.
-  <br />
-  <br />
-  I am well-versed in foundational languages and technologies like 
-  <i>
-    <b className="purple"> C, Java, and the MERN stack</b>
-  </i>
-  , and I actively explore innovative approaches to problem-solving using Java.
-  <br />
-  <br />
-  My primary interests lie in building cutting-edge&nbsp;
-  <i>
-    <b className="purple">web technologies and scalable products</b>
-  </i>
-  , with a strong enthusiasm for <b className="purple">Artificial Intelligence (AI)</b> and <b className="purple">cloud computing</b>.
-  <br />
-  <br />
-  Whenever I get the opportunity, I enjoy applying my skills in developing full-stack applications with <b className="purple">Node.js</b> and modern JavaScript libraries/frameworks, including&nbsp;
-  <i>
-    <b className="purple">React.js and Express.js</b>
-  </i>
-  .
-</p>
-
+              Hello! I'm a passionate full-stack developer dedicated to crafting scalable web solutions and integrating AI innovations.
+              <br />
+              <br />
+              Proficient in core technologies like <i><b className="purple">C, Java, and the MERN stack</b></i>, I thrive on building robust applications with <b className="purple">Node.js</b>, <b className="purple">React.js</b>, and <b className="purple">Express.js</b>.
+              <br />
+              <br />
+              My focus: cutting-edge <i><b className="purple">web technologies</b></i>, <b className="purple">Artificial Intelligence</b>, and <b className="purple">cloud computing</b> to solve real-world problems.
+            </p>
+            <h5 style={{ marginTop: "20px" }}>Core Skills:</h5>
+            <div className="d-flex flex-wrap gap-2 mt-3">
+              {skills.map((skill, index) => (
+                <Badge key={index} bg="secondary" className="fs-6 px-3 py-2">
+                  {skill}
+                </Badge>
+              ))}
+            </div>
           </Col>
           <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+            <Tilt options={tiltOptions}>
+              <img 
+                src={myImg} 
+                className="img-fluid" 
+                alt="Salmaan M - Full-stack developer avatar" 
+                style={{ maxHeight: "400px" }}
+              />
             </Tilt>
           </Col>
         </Row>
@@ -55,12 +65,10 @@ function Home2() {
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              Feel free to <span className="purple">connect</span> with me
             </p>
             <p>
-              I’d love to hear about your project, ideas, or anything you'd like
-              to share. Whether you have questions or want to collaborate, feel
-              free to reach me, and I’ll get back to you as soon as possible.
+              I'd love to hear about your projects, ideas, or collaboration opportunities. Reach out—I'll respond promptly!
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
@@ -68,7 +76,8 @@ function Home2() {
                   href="https://github.com/Salmaan-M"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
+                  aria-label="GitHub profile"
                 >
                   <AiFillGithub />
                 </a>
@@ -78,7 +87,8 @@ function Home2() {
                   href="https://www.linkedin.com/in/salmaan-m/"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
+                  aria-label="LinkedIn profile"
                 >
                   <FaLinkedinIn />
                 </a>
@@ -88,10 +98,11 @@ function Home2() {
                   href="https://mail.google.com/mail/?view=cm&fs=1&to=salmaansalmaan114@gmail.com"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
+                  aria-label="Email Salmaan"
                 >
                   <AiOutlineMail />
-               </a>
+                </a>
               </li>
               <li className="social-icons">
                 <a
@@ -99,6 +110,7 @@ function Home2() {
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
+                  aria-label="WhatsApp chat"
                 >
                   <AiOutlineWhatsApp />
                 </a>
@@ -109,6 +121,7 @@ function Home2() {
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
+                  aria-label="Instagram profile"
                 >
                   <AiFillInstagram />
                 </a>
@@ -120,4 +133,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;

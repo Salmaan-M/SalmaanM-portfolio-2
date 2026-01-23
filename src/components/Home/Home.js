@@ -16,26 +16,22 @@ function Home() {
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 Hi There!{" "}
-                <span className="wave" role="img" aria-labelledby="wave">
+                <span className="wave" role="img" aria-label="wave emoji">
                   👋🏻
                 </span>
               </h1>
-
               <h1 className="heading-name">
-                I'M<strong className="main-name"> Salmaan M</strong>
+                I'M <strong className="main-name">Salmaan M</strong>
               </h1>
-
-              <div style={{ padding: 50, textAlign: "left" }}>
+              <div style={{ padding: 38, textAlign: "left" }}>
                 <Type />
               </div>
-
             </Col>
-
             {/* RIGHT SIDE */}
             <Col md={5} className="home-image-container">
               <img
                 src={homeLogo}
-                alt="home pic"
+                alt="Salmaan M - Developer avatar"
                 className="img-fluid home-image"
                 style={{ maxHeight: "450px" }}
               />
@@ -43,7 +39,9 @@ function Home() {
           </Row>
         </Container>
       </Container>
-      <Home2 />
+      <div style={{ marginTop: "-80px" }}>
+        <Home2 />
+      </div>
     </section>
   );
 }

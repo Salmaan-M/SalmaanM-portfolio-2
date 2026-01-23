@@ -9,6 +9,7 @@ function Type() {
           "MERN Stack Developer",
           "Java - Programmer",
           "Full Stack Developer",
+          "Open-Source Contributor"
           
         ],
         autoStart: true,
