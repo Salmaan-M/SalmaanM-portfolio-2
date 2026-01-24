@@ -20,7 +20,7 @@ function Footer() {
           <ul className="footer-icons">
             <li className="social-icons">
               <a
-                href="https://github.com/vasanthkrishnan/"
+                href="https://github.com/Salmaan-M/"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -30,7 +30,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://www.linkedin.com/in/vasanthkrish2004/"
+                href="https://www.linkedin.com/in/salmaan-m/"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -40,7 +40,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="mailto:vasanthkrish.s2004@gmail.com"
+                href="mailto:salmaansalmaan114@gmail.com"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -48,19 +48,10 @@ function Footer() {
                 <AiOutlineMail />
               </a>
             </li>
+            
             <li className="social-icons">
               <a
-                href="https://wa.me/6379932251"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <AiOutlineWhatsApp />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://www.instagram.com/_._vsnth.krish_._"
+                href="https://www.instagram.com/itz.salmaan_"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
