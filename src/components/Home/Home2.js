@@ -10,10 +10,17 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
+
 function Home2() {
-  const skills = [
-    "MERN Stack", "Node.js", "React.js", "Express.js", "MongoDB",
-    "Java", "C", "AI", "Cloud Computing", "Full-Stack"
+
+
+  const experiences = [
+    {
+      title: "Open Source Contributer - FOSSASIA",
+      duration: "Jan 2026 - Present",
+      description: "I fix bugs, and documention. Check out my github for PRs and MRs"
+    },
+    
   ];
 
   const tiltOptions = {
@@ -41,14 +48,8 @@ function Home2() {
               <br />
               My focus: cutting-edge <i><b className="purple">web technologies</b></i>, <b className="purple">Artificial Intelligence</b>, and <b className="purple">cloud computing</b> to solve real-world problems.
             </p>
-            <h5 style={{ marginTop: "20px" }}>Core Skills:</h5>
-            <div className="d-flex flex-wrap gap-2 mt-3">
-              {skills.map((skill, index) => (
-                <Badge key={index} bg="secondary" className="fs-6 px-3 py-2">
-                  {skill}
-                </Badge>
-              ))}
-            </div>
+            
+            
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt options={tiltOptions}>
@@ -59,6 +60,26 @@ function Home2() {
                 style={{ maxHeight: "400px" }}
               />
             </Tilt>
+          </Col>
+        </Row>
+        {/* New Experience Section */}
+        <Row className="mt-5">
+          <Col md={12}>
+            <h2 className="purple" style={{ fontSize: "2.2em", textAlign: "center" }}>
+              Professional <span className="purple">Experience</span>
+            </h2>
+            <div className="timeline mt-5">
+              {experiences.map((exp, index) => (
+                <div key={index} className="timeline-item mb-4 position-relative">
+                  <div className="timeline-dot position-absolute"></div>
+                  <div className="timeline-content ps-5">
+                    <h5 className="mb-1">{exp.title} <Badge bg="purple">{exp.company}</Badge></h5>
+                    <p className="text-muted mb-2 fs-6">{exp.duration}</p>
+                    <p>{exp.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </Col>
         </Row>
         <Row>

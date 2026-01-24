@@ -776,3 +776,67 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+/* Timeline Styles */
+.timeline {
+  position: relative;
+  padding-left: 30px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, #6f42c1, #8b5cf6);
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -37px;
+  top: 8px;
+  width: 16px;
+  height: 16px;
+  background: linear-gradient(45deg, #6f42c1, #8b5cf6);
+  border: 3px solid white;
+  border-radius: 50%;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(111, 66, 193, 0.4);
+}
+
+.timeline-content {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  border-left: 3px solid #6f42c1;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateX(8px);
+  box-shadow: 0 8px 25px rgba(111, 66, 193, 0.2);
+}
+
+.timeline-content h5 {
+  color: #6f42c1;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: 20px;
+  }
+  .timeline-dot {
+    left: -30px;
+    width: 14px;
+    height: 14px;
+  }
+}
