@@ -16,10 +16,16 @@ function Home2() {
 
   const experiences = [
     {
+      title: "Open Source Contributer - Meshery",
+      duration: "April 2026 - Present",
+      description: "Contributed bug fixes, UI enhancements, and CI/CD workflow improvements to Meshery (CNCF) and its Layer5 projects through collaborative open-source development."
+    },
+    {
       title: "Open Source Contributer - FOSSASIA",
       duration: "Jan 2026 - Present",
-      description: "I fix bugs, and documention. Check out my github for PRs and MRs"
+      description: "Submitted pull requests improving bugs, fixes, documentation, contributor onboarding, and project maintenance while following Git-based development and CI practices."
     },
+  
     
   ];
 
