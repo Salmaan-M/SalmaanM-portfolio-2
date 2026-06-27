@@ -7,6 +7,7 @@ import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
+  AiOutlineCode,
 } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
 
@@ -82,6 +83,17 @@ function NavBar() {
             >
               <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} />
               {!isMobile && "  Projects"}
+            </Nav.Link>
+          </Nav.Item>
+
+          <Nav.Item>
+            <Nav.Link
+              as={Link}
+              to="/opensource"
+              onClick={() => updateExpanded(false)}
+            >
+              <AiOutlineCode style={{ marginBottom: "2px" }} />
+              {!isMobile && "  Open Source"}
             </Nav.Link>
           </Nav.Item>
 

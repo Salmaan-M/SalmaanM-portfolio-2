@@ -271,6 +271,8 @@ button:focus {
   background-size: cover !important;
   width: 100%;
   height: 100%;
+  pointer-events: none !important;
+  z-index: 0 !important;
 }
 
 .home-header {
@@ -472,6 +474,12 @@ button:focus {
   padding-top: 150px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
+  z-index: 1;
+}
+
+.project-section > .container {
+  position: relative;
+  z-index: 2;
 }
 
 .project-card {
@@ -838,5 +846,199 @@ button:focus {
     left: -30px;
     width: 14px;
     height: 14px;
+  }
+}
+
+/* Open Source Contributions */
+.oss-org-section {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.oss-org-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.oss-org-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.oss-all-prs-btn {
+  margin-left: 0 !important;
+}
+
+.oss-org-name {
+  color: white;
+  font-size: 1.8em;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.oss-org-name-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.oss-org-name-link:hover {
+  color: #c084f5;
+  text-decoration: underline;
+}
+
+.oss-org-subtitle {
+  color: #c084f5;
+  font-size: 0.75em;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.oss-org-subtitle:hover {
+  color: #e9d5ff;
+  text-decoration: underline;
+}
+
+.oss-org-description {
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 0;
+  max-width: 600px;
+}
+
+.oss-pr-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.oss-pr-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  margin-bottom: 0.75rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(192, 132, 245, 0.25);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.oss-pr-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(192, 132, 245, 0.6);
+  transform: translateX(4px);
+  box-shadow: 0 4px 15px rgba(192, 132, 245, 0.15);
+}
+
+.oss-pr-icon {
+  color: #c084f5;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.oss-pr-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.oss-pr-title {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.oss-pr-title:hover {
+  color: #c084f5;
+  text-decoration: underline;
+}
+
+.oss-pr-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+  font-size: 0.85em;
+}
+
+.oss-pr-repo-link,
+.oss-pr-number-link {
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.oss-pr-repo-link:hover,
+.oss-pr-number-link:hover {
+  color: #c084f5;
+  text-decoration: underline;
+}
+
+.oss-pr-number-link {
+  color: rgba(192, 132, 245, 0.85);
+}
+
+.oss-pr-status {
+  flex-shrink: 0;
+  font-size: 0.75em;
+  font-weight: 600;
+  padding: 0.25rem 0.6rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.oss-pr-status:hover {
+  opacity: 0.85;
+  transform: scale(1.05);
+  text-decoration: none;
+}
+
+.oss-pr-status-merged {
+  background: rgba(34, 197, 94, 0.15);
+  color: #4ade80;
+  border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.oss-pr-status-review {
+  background: rgba(234, 179, 8, 0.15);
+  color: #facc15;
+  border: 1px solid rgba(234, 179, 8, 0.3);
+}
+
+@media (max-width: 768px) {
+  .oss-org-header {
+    flex-direction: column;
+  }
+
+  .oss-org-actions {
+    width: 100%;
+  }
+
+  .oss-org-actions .btn {
+    flex: 1;
+  }
+
+  .oss-pr-item {
+    flex-wrap: wrap;
+  }
+
+  .oss-pr-status {
+    margin-left: 2.4rem;
   }
 }
