@@ -31,17 +31,10 @@ const organizations = [
         url: "https://github.com/meshery/meshery/pull/19644",
       },
       {
-        title: "Create Salmaan-M Attendance",
-        repo: "meshery/meshery",
-        number: 19440,
-        status: "Merged",
-        url: "https://github.com/meshery/meshery/pull/19440",
-      },
-      {
         title: "fix(ui): resolve invalid save icon import in performance preferences",
         repo: "meshery/meshery",
         number: 19399,
-        status: "Review required",
+        status: "Merged",
         url: "https://github.com/meshery/meshery/pull/19399",
       },
     ],
