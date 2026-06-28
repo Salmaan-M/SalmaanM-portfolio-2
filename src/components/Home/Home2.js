@@ -43,7 +43,7 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              Let me<span className="purple"> Introduce </span> myself
             </h1>
             <p className="home-about-body">
               Hello! I'm a passionate full-stack developer dedicated to crafting scalable web solutions and integrating AI innovations.
