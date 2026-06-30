@@ -49,7 +49,7 @@ function Home2() {
               Hello! I'm a passionate full-stack developer dedicated to crafting scalable web solutions and integrating AI innovations.
               <br />
               <br />
-              Proficient in core technologies like <i><b className="purple">C, Java, and the MERN stack</b></i>, I thrive on building robust applications with <b className="purple">Node.js</b>, <b className="purple">React.js</b>, and <b className="purple">Express.js</b>.
+              Proficient in core technologies like <i><b className="purple">Java, Cloud-native solutions and the MERN stack</b></i>, I thrive on building robust applications with <b className="purple">Node.js</b>, <b className="purple">React.js</b>, and <b className="purple">Express.js</b>.
               <br />
               <br />
               My focus: cutting-edge <i><b className="purple">web technologies</b></i>, <b className="purple">Artificial Intelligence</b>, and <b className="purple">cloud computing</b> to solve real-world problems.
